@@ -1,0 +1,52 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "homes.scss";
+@import "items.scss";
+@import "reservations.scss";
+@import "users.scss";
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Hiragino Kaku Gothic', Avenir, Corbel, Osaka, sans-serif;
+}
+
+body {
+  // background-color: #fafafa;
+}
+
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+
+
+// homes#top
+.top-container {
+  width: 100vw;
+  height: 100vh;
+  background: image-url('/images/puchu-uchu.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.top-logo {
+  // width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.buy-ticket-image {
+  width: auto;
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+}
