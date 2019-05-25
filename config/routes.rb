@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   resources :items
 
-  # get 'admin', to: 'homes#admin'
+  get 'admin', to: 'homes#admin'
   root 'homes#top'
 end
 
