@@ -12,10 +12,16 @@
   margin: 0;
   padding: 0;
   font-family: 'Hiragino Kaku Gothic', Avenir, Corbel, Osaka, sans-serif;
+  color: #191970;
+  letter-spacing: 1px;
 }
 
 body {
   // background-color: #fafafa;
+}
+
+li {
+  list-style: none;
 }
 
 .clearfix::after {
@@ -105,27 +111,105 @@ body {
 }
 
 
-// .buy-ticket-image {
-//   // width: auto;
-//   position: absolute;
-//   bottom: 2%;
-//   right: 2%;
 
-//   .buy-ticket-thin {
-//     opacity: 1;
-//   transition: 0.3s;
+// items#index
 
-//     &:hover {
-//       opacity: 0;
-//     }
-//   }
+.items-header {
+  width: 100vw;
+  height: 260px;
+  background-color: #fffaf0;
+  position: relative;
 
-//   .buy-ticket-thick {
-//     opacity: 0;
-//   transition: 0.3s;
+  .items-header-logo {
+    position: absolute;
+    top: 24px;
+    left: 36px;
+  }
 
-//     &:hover {
-//       opacity: 1;
-//     }
-//   }
-// }
+  .items-title {
+    font-size: 60px;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+
+  .items-subtitle {
+    font-size: 20px;
+    font-weight: normal;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+}
+
+.items-notice {
+  padding: 60px;
+
+  .items-notice-title, {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .items-notice-box {
+    width: 900px;
+    // height: 200px;
+    max-width: 99%;
+    background-color: #fffaf0;
+    border-radius: 5%;
+    margin: 60px auto;
+    padding: 30px 60px;
+
+    .items-notice-subtitle {
+      font-size: 20px;
+      text-align: center;
+      letter-spacing: 3px;
+      margin-bottom: 30px;
+    }
+
+    h5 p {
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    h6 ul {
+      font-size: 13px;
+      line-height: 30px;
+      margin-left: 20px;
+
+      li::before {
+        position: relative;
+        // top: -2px;
+        left: -20px;
+
+        display: inline-block;
+
+        width: 6px;
+        height: 6px;
+
+        content: '●';
+      }
+    }
+  }
+}
+
+.items-calendar {
+
+   .items-calendar-title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+   }
+
+    .items-calendar-subtitle {
+      font-size: 20px;
+      text-align: center;
+      // letter-spacing: 3px;
+      margin-bottom: 30px;
+    }
+}

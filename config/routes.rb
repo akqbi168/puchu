@@ -3,7 +3,8 @@ Rails.application.routes.draw do
 
   devise_for :users
 
-  resources :items
+  resources :items, only: [:index]
+  resources :reservation, only: []
   resources :users, except: [:new]
 
   get 'admin', to: 'homes#admin'
