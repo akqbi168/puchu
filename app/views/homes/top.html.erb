@@ -1,15 +1,32 @@
 <div class="top-container">
 
+  <!-- <div class="top-my-page"> -->
+
+    <%= link_to new_user_session_path do %>
+      <%= image_tag '/images/log_in.png', :size =>'160x48', :alt => 'Log in', :class => 'top-my-page' %>
+      <%= image_tag '/images/log_in_hover.png', :size =>'160x48', :alt => 'Log in', :class => 'top-my-page-green' %>
+    <% end %>
+
+  <!-- </div> -->
+
   <div class="top-logo">
 
     <%= image_tag '/images/puchu_white.png', :size =>'400x180', :alt => 'Puchu!' %>
 
   </div>
 
-  <div class="buy-ticket-image">
+  <!-- <div class="buy-ticket-image"> -->
     <%= link_to admin_path do %>
-      <%= image_tag '/images/buy_ticket.png', :size =>'160x160', :alt => 'Ticket' %>
+      <%= image_tag '/images/buy_ticket.png', :size =>'160x160', :alt => 'Ticket', :class => 'buy-ticket-thin' %>
+      <%= image_tag '/images/buy_ticket_hover.png', :size =>'160x160', :alt => 'Ticket', :class => 'buy-ticket-thick' %>
     <% end %>
-  </div>
+  <!-- </div> -->
+
+  <!-- <div class="buy-ticket-image">
+    <%#= link_to admin_path do %>
+      <%#= image_tag '/images/buy_ticket_thin.png', :size =>'160x160', :alt => 'Ticket', :class => 'buy-ticket-thin' %>
+      <%#= image_tag '/images/buy_ticket_thick.png', :size =>'160x160', :alt => 'Ticket', :class => 'buy-ticket-thick' %>
+    <%# end %>
+  </div> -->
 
 </div>

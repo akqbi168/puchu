@@ -36,6 +36,38 @@ body {
   position: relative;
 }
 
+.top-my-page {
+  width: 160px;
+  height: 48px;
+  position: absolute;
+  top: 4%;
+  right: 2%;
+  opacity: 1;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0;
+    transition: 0.3s;
+  }
+}
+
+.top-my-page-green {
+  width: 160px;
+  height: 48px;
+  position: absolute;
+  top: 4%;
+  right: 2%;
+  opacity: 0;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 1;
+    transition: 0.3s;
+  }
+}
+
+
+
 .top-logo {
   // width: 400px;
   position: absolute;
@@ -44,9 +76,56 @@ body {
   transform: translateY(-50%) translateX(-50%);
 }
 
-.buy-ticket-image {
-  width: auto;
+
+
+.buy-ticket-thin {
   position: absolute;
   bottom: 2%;
   right: 2%;
+  opacity: 1;
+  transition: 0.7s;
+
+  &:hover {
+    opacity: 0;
+    transition: 0.7s;
+  }
 }
+
+.buy-ticket-thick {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  opacity: 0;
+  transition: 0.7s;
+
+  &:hover {
+    opacity: 1;
+    transition: 0.7s;
+  }
+}
+
+
+// .buy-ticket-image {
+//   // width: auto;
+//   position: absolute;
+//   bottom: 2%;
+//   right: 2%;
+
+//   .buy-ticket-thin {
+//     opacity: 1;
+//   transition: 0.3s;
+
+//     &:hover {
+//       opacity: 0;
+//     }
+//   }
+
+//   .buy-ticket-thick {
+//     opacity: 0;
+//   transition: 0.3s;
+
+//     &:hover {
+//       opacity: 1;
+//     }
+//   }
+// }
