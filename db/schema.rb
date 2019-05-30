@@ -14,8 +14,8 @@ ActiveRecord::Schema.define(version: 2019_05_25_073319) do
 
   create_table "items", force: :cascade do |t|
     t.integer "genre_id"
-    t.date "date"
-    t.time "time"
+    t.integer "date_id"
+    t.integer "time_id"
     t.integer "price"
     t.integer "unit_in_stock"
     t.datetime "created_at", null: false

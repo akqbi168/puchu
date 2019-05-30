@@ -2,8 +2,8 @@ class ItemsController < ApplicationController
 
   def create
     @item = Item.new(item_params)
-    binding.pry
-    if Item.save
+    # binding.pry
+    if @item.save
       redirect_to admin_path
     else
       binding.pry
@@ -14,6 +14,6 @@ class ItemsController < ApplicationController
   private
 
     def item_params
-      params.require(item).permit(:genre_id, :date, :time, :price, :unit_in_stock)
+      params.require(:item).permit(:genre_id, :date_id, :time_id, :price, :unit_in_stock)
     end
 end

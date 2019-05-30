@@ -1,34 +1,40 @@
 <h1 style="font-size: 40px">管理者ページ</h1>
 
-<%= form_for @item do |f| %>
+<div class="admin-add-item"><b><u>在庫追加</u></b><br>
 
-  <div class="field">
-    <%= f.label :genre_id, "おとな／こども" %><br>
-    <%= f.select :genre_id, Item.genre_ids.keys, {prompt: '種別選択'} %>
-  </div>
+  <%= form_for @item do |f| %>
 
-  <div class="field">
-    <%= f.label :date, "日付選択" %><br>
-    <%= f.date_select :date, {prompt: ''} %>
-  </div>
+    <div class="field">
+      <%= f.label :genre_id, "おとな／こども" %><br>
+      <%= f.select :genre_id, Item.genre_ids.keys, {prompt: '種別選択'} %>
+    </div>
 
-  <div class="field">
-    <%= f.label :time, "時間選択" %><br>
-    <%= f.time_select :time, {prompt: ''} %>
-  </div>
+    <div class="field">
+      <!-- <%#= f.label :date, "日付選択" %><br> -->
+      <%#= f.date_select :date, {prompt: ''} %>
+      <%= f.label :date_id, "日付選択" %><br>
+      <%= f.select :date_id, Item.date_ids.keys, {prompt: '日付選択'} %>
+    </div>
 
-  <div class="field">
-    <%= f.label :price, "価格" %><br>
-    <%= f.number_field :price %>
-  </div>
+    <div class="field">
+      <%= f.label :time_id, "時間選択" %><br>
+      <%= f.select :time_id, Item.time_ids.keys, {prompt: '時間選択'} %>
+    </div>
 
-  <div class="field">
-    <%= f.label :unit_in_stock, "在庫数" %><br>
-    <%= f.number_field :unit_in_stock %>
-  </div>
+    <div class="field">
+      <%= f.label :price, "価格" %><br>
+      <%= f.number_field :price %>
+    </div>
 
-  <div class="field">
-    <%= f.submit "作成" %>
-  </div>
+    <div class="field">
+      <%= f.label :unit_in_stock, "在庫数" %><br>
+      <%= f.number_field :unit_in_stock %>
+    </div>
 
-<% end %>
+    <div class="field">
+      <%= f.submit "作成" %>
+    </div>
+
+  <% end %>
+
+</div>

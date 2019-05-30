@@ -200,18 +200,18 @@ li {
 
 .items-calendar {
 
-   .items-calendar-title {
+  .items-calendar-title {
     font-size: 32px;
     font-weight: bold;
     text-align: center;
-   }
+  }
 
-    .items-calendar-subtitle {
-      font-size: 20px;
-      text-align: center;
-      // letter-spacing: 3px;
-      margin-bottom: 30px;
-    }
+  .items-calendar-subtitle {
+    font-size: 20px;
+    text-align: center;
+    // letter-spacing: 3px;
+    margin-bottom: 30px;
+  }
 }
 
 
@@ -221,6 +221,13 @@ li {
 
 
 // admin
+.admin-add-item {
+  width: 25%;
+  margin-left: 20px;
+  padding: 20px;
+  border: 2px solid gray;
+  border-radius: 3%;
+}
 .field {
   margin: 15px;
 }
