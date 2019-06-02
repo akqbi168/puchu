@@ -11,6 +11,10 @@ class ItemsController < ApplicationController
     end
   end
 
+  def index
+    @items = Item.all
+  end
+
   private
 
     def item_params
