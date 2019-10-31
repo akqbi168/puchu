@@ -60,7 +60,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # ここから追記 ============================================
 
 # 会員登録
-gem 'devise', "~> 4.6.1"
+gem 'devise', "~> 4.7.1"
 
 # デザイン
 gem 'bootstrap-sass', '~> 3.3.6'
