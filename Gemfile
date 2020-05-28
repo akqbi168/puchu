@@ -77,7 +77,7 @@ gem 'cocoon'
 gem 'rails4-autocomplete'
 
 # ページング機能
-gem 'kaminari', '~> 1.1.1'
+gem 'kaminari', '~> 1.2.1'
 
 # レコードの論理削除
 gem 'paranoia'
