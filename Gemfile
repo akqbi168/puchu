@@ -67,7 +67,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'jquery-rails'
 
 # 画像追加
-gem 'carrierwave', '~> 1.3.1'   # 画像アップロード用
+gem 'carrierwave', '~> 1.3.2'   # 画像アップロード用
 gem 'rmagick'                   # 画像リサイズ用you
 
 # フォームの動的追加
